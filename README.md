@@ -41,3 +41,22 @@
 | Maintainance | hard | easier to maintain |
 | Debugging | slightly easier | hard |
 | Dev Experience | recommended to use microservices for small apps | recommended to use microservices for big apps |
+
+## What happens in NamsteDev.com ?
+- Student 
+    - Web app
+    - Next.js
+- Admin
+    - web app
+    - React JS
+- Backend
+    - Node.js
+- Student 
+    - Mobile app
+    - React Native
+
+## What are we going to build in Dev Tinder ?
+- Frontend
+    - React.js
+- Backend
+    - Node.js
