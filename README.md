@@ -90,9 +90,26 @@
         - to userId
         - statuses
             - pending
-            - accepted
-            - rejected
-            
-
-
-- API design
+                - accepted
+                - rejected
+            - ignored
+- API design - {REST API}
+    - GET
+        - profile
+        - request
+        - connection
+    - POST
+        - signup
+        - login
+        - profile
+        - send request
+            - ignore
+            - interested
+        - review request
+            - accept
+            - rejectedddd
+    - PUT - update the data 
+    - PATCH - update the data
+        - profile
+    - DELETE
+        - profile
