@@ -28,3 +28,9 @@
 - Use of regex in routes `/a/, /.*fly$/`
 - reading the queryparams in the routes
 - Reading the dynamic routes
+- Multiple route handlers
+- next()
+- next function snd errors along with res.send()
+- what is middleware? why do we need it?
+- How express JS basically handles requests behind the scenes
+- Difference btw app.use and app.all

@@ -2,31 +2,26 @@ const express = require("express");
 
 const app = express();
 
-// this will handle only GET call to /user
-app.get("/user/:userId/:name/:password", (req,res) => {
-    res.send({
-        firstName : "Avyay",
-        lastName : "B"
-    });
+const { adminAuth, userAuth } = require('./middlewares/auth.js');
+
+// handle auth middleware for all GET, POST, ... requests
+app.use("/admin", adminAuth);
+
+app.post("/user/login", (req,res) => {
+    res.send("User logged in successfully!");
 });
 
-app.post("/user", (req,res) => {
-    // saving data to DB
-    res.send("Data successfully saved to the database");
+app.get("/user/data", userAuth, (req,res) => {
+    res.send("User data sent.");
 });
 
-app.delete("/user", (req,res) => {
-    res.send("Data successfully deleted");
+app.get("/admin/getAllData", (req,res) => {
+        res.send("All data sent.");
 });
 
-app.use("/",(req,res) => {
-    res.send("Hello from the server");
-});
-
-// use will match all the HTTP method API calls to /test
-app.use('/test',(req,res) => {
-    res.send("Hello the test route");
-});
+app.delete("/admin/deleteUser", (req,res) => {
+        res.send("Deleted a user");
+})
 
 app.listen(3000, () => {
     console.log("Server is successfully running on port 3000");
