@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 // this will handle only GET call to /user
-app.get("/user", (req,res) => {
+app.get("/user/:userId/:name/:password", (req,res) => {
     res.send({
         firstName : "Avyay",
         lastName : "B"
