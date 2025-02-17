@@ -60,3 +60,39 @@
     - React.js
 - Backend
     - Node.js
+
+## DevTinder product requirements : 
+1. Create an account
+2. Login page
+3. Update your profile
+4. Feed page - explore
+5. Send connection Request
+6. See our matches
+7. See the request we have sent/received
+
+## Tech Planning :
+- Two microservices
+    - Frontend
+        - React.js
+    - Backend
+        - Node.js
+        - Mongo DB
+## LLD (Low Level Design) :
+- DB design - List of collections to store data
+    - User Collection
+        - firstName
+        - lastName
+        - emailId
+        - password
+        - age, gender etc...
+    - Connection Requests
+        - from userId
+        - to userId
+        - statuses
+            - pending
+            - accepted
+            - rejected
+            
+
+
+- API design
