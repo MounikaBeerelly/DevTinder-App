@@ -1,0 +1,27 @@
+{
+  "name": "devtinder_backend",
+  "version": "1.0.0",
+  "description": "Tinder for devs",
+  "homepage": "https://github.com/MounikaBeerelly/DevTinder-App#readme",
+  "bugs": {
+    "url": "https://github.com/MounikaBeerelly/DevTinder-App/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MounikaBeerelly/DevTinder-App.git"
+  },
+  "license": "ISC",
+  "author": "Mounika Beerelly",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb"
+  ],
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

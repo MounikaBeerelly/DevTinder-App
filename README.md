@@ -26,6 +26,7 @@
 - **Microservices architecture**
     - Develop the application in different microservices.
     - Most of the industries follows Microservices architecture.
+    
 |   | Monolith architecture | Microservices architecture |
 | - | --------------------- | -------------------------- |
 | Dev Speed | Slower - because lot of developers working in same repository | Faster- bccause each team handle their repository independently |
@@ -107,9 +108,18 @@
             - interested
         - review request
             - accept
-            - rejectedddd
+            - rejected
     - PUT - update the data 
     - PATCH - update the data
         - profile
     - DELETE
         - profile
+
+## Create and setup server
+- install  `express.js` for creating the server using `npm install express` command.
+- import the express in app.js 
+- create the server using express.
+
+### nodemon - 
+- It automatically refresh the server, whenever the changes happens.
+- With nodemon, no need to run the server for every change.
