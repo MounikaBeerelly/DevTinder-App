@@ -35,3 +35,6 @@
 - How express JS basically handles requests behind the scenes
 - Difference btw app.use and app.all
 - Error handling
+
+## Database connection
+- Install mongoose
