@@ -53,3 +53,9 @@
 - API - get users by email
 - API- Feed API - GET/feed - get all the users from the database
 - create an API get user by id `findById()`
+- create delete user api
+- Difference between `PATCH and PUT` methods
+- API - update user
+- Explore mongoose documentation for model methods
+- what are options in a model.findOneAndUpdate method, explore more about it
+- API - update the user with email ID
