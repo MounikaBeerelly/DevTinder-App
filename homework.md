@@ -37,4 +37,11 @@
 - Error handling
 
 ## Database connection
-- Install mongoose
+- create a free cluster on mongodb official website `Mongo Atlas`.
+- Install mongoose library `https://mongoosejs.com/docs/guide.html`
+- connect your application to the database `"Connection-url/DevTinder"`.
+- Call the connectDB function and connect to the database before starting application on 3000.
+- Create a userSchema & user model
+- create POST `/signup` API to add data to database
+- Push some documents using API calls from postman
+- Error handling using try, catch
