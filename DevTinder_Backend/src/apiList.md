@@ -8,7 +8,7 @@
 ## profileRouter
 - GET /profile
 - PATCH /profile/edit
-- PATCH /profile/password
+- PATCH /profile/password  - forgot password API
 
 ## connectionRequestRouter
 - POST /request/send/interested/:userId
