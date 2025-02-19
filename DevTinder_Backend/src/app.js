@@ -116,6 +116,29 @@ app.patch("/user/:userId", async (req,res) => {
     }
 });
 
+// Login User
+app.post("/login", async (req,res) => {
+    try {
+        const { emailId, password } = req.body;
+
+        const user = await User.findOne({emailId : emailId});
+
+        if(!user) {
+            throw new Error("Email Id not present in the DB");
+        }
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+
+        if(isPasswordValid) {
+            res.send("Login successfully");
+        } else {
+            throw new Error("Invalid credentials");
+        }
+    }
+    catch (err) {
+        res.status(400).send("ERROR: " + err.message);
+    }
+});
+
 connectDB()
     .then(() => {
         console.log("Database connection established...")
