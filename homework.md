@@ -71,3 +71,7 @@
 - Install validator
 - Explore validator library functions and use validatory functions for password, email, photoUrl
 - NEVER TRUST req.body
+
+- validate data in Signuo API
+- Install `bcrypt` library
+- Create password hash using `bcrypt.hash` and save the user with encrypted password.
