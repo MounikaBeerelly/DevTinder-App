@@ -51,10 +51,15 @@ app.post("/login", async (req,res) => {
         if(isPasswordValid) {
 
             // create JWT token
-            const token = await jwt.sign({_id: user._id}, "DEV@Tinder$790");
+            const token = await jwt.sign({_id: user._id}, "DEV@Tinder$790", { 
+                expiresIn : "1d"
+            });
 
             // Add a token to the cookie and send the response to the user
-            res.cookie("token", token);
+            res.cookie("token", token, {
+                 httpOnly: true,
+                 expires: new Date(Date.now() + 8 * 3600000),
+            });
             res.send("Login successfully");
         } else {
             throw new Error("Invalid credentials");
@@ -76,8 +81,11 @@ app.get("/profile", userAuth, async (req, res) => {
     }
 });
 
-app.post("/sendConnectionRequest", async (req,res) => {
-    
+app.post("/sendConnectionRequest", userAuth, async (req,res) => {
+    const user = req.user;
+
+    // Sending a connection request
+    res.send(user.firstName + " sent the Connection request!")
 });
 
 connectDB()
