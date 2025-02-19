@@ -75,3 +75,13 @@
 - validate data in Signuo API
 - Install `bcrypt` library
 - Create password hash using `bcrypt.hash` and save the user with encrypted password.
+- Create login API
+- Validate the data and compare the password
+- Throw error if email/password invalid
+
+- Install cookie-parser
+- just send a dummy cookie to user
+- Create GET / profile API and check if you get the cookie back
+- install jsonwebtoken
+- In login API, after email and password validation, create JWT token and send it to the user in cookie
+- Read the cookies inside your profile API and find the logged in user
