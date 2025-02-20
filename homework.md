@@ -120,4 +120,6 @@
 - Thought process - POST vs GET
 - read about `ref and populate` 
 - create GET api User/request/received aPI
-- 
+- Create GET /user/connections API
+- Logic for GET /feed API
+- Explore the $nin, $and, $ne and other queries
