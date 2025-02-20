@@ -117,3 +117,7 @@
 - Read the article about compound indexes
 
 - Write and review proper code for `/request/review/:status/:requestId` API.
+- Thought process - POST vs GET
+- read about `ref and populate` 
+- create GET api User/request/received aPI
+- 
