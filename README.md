@@ -123,3 +123,7 @@
 ### nodemon - 
 - It automatically refresh the server, whenever the changes happens.
 - With nodemon, no need to run the server for every change.
+
+## Web Application
+- **vite** - build tool used to create React.js/Next.js projects.
+- `npm create vite@latest devTinder-web -- --template react` used to create project.
