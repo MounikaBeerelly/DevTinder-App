@@ -7,3 +7,17 @@
 - Install `tailwind css`,`postcss` and `autoprefixer`
 - install `daisyui` - it builts components for you
 - Add navbar component to App.jsx
+- Create NavBar.jsx in seperate file.
+- Install `react-router-dom` to create routes
+- Create BrowserRouter . Routes > Route=/ Body > RouteChildren
+- Create an Outlet in Body component
+- Create a Footer
+
+
+## Routes
+- Body
+    - NavBar
+    - Route = /  => Feed
+    - Route = /login  => Login
+    - Route = /connections  => Connections
+    - Route = /profile  => Profile
