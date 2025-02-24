@@ -49,3 +49,7 @@
 - New PAge - See all my connections
 - New Page - See all my new connection requests
 - Profile page
+- feature - accept/reject connection request
+- send/ignore usercard from the feed
+- signup new user
+- E2E testing
