@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { BASE_URL } from '../utils/constants';
 import axios from 'axios';
 import { useDispatch, useSelector } from "react-redux";
-import { addUser } from '../utils/userSlice';
+import { addUser } from '../utils/userSlice.jsx';
 import { useEffect } from "react";
 
 const Body = () => {

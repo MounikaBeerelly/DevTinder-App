@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { BASE_URL } from '../utils/constants';
-import { removeUser } from '../utils/userSlice';
+import { removeUser } from '../utils/userSlice.jsx';
 
 const NavBar = () => {
   const user = useSelector(store => store.user);
@@ -48,7 +48,18 @@ const NavBar = () => {
                 <span className="badge">New</span>
               </Link>
             </li>
-            <li><a>Settings</a></li>
+            <li>
+            <Link to="/connections" className="justify-between">
+                Connections
+                <span className="badge">New</span>
+              </Link>              
+              </li>
+              <li>
+            <Link to="/requests" className="justify-between">
+                Requests
+                <span className="badge">New</span>
+              </Link>              
+              </li>
             <li>
               <a onClick={handleLogout}>Logout</a>
               </li>

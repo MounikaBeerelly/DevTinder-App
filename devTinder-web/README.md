@@ -42,4 +42,10 @@
 - You should not be able to access other routes without login
 - If token is not present, redirect to login page
 - Logout feature
+- Get the feed and add the feed in the store
+- Build the user card on feed
+- Edit profile feature
+- Show toast message on save of profile
+- New PAge - See all my connections
+- New Page - See all my new connection requests
 - Profile page
