@@ -3,7 +3,8 @@ const { subDays, startOfDay, endOfDay } = require("date-fns");
 const sendEmail = require('./sendEmail');
 const ConnectionRequestModel = require('../models/connectionRequest');
 
-cron.schedule("04 22 * * * ", async () => {
+// this job will run 8AM in the morning
+cron.schedule("0 8 * * * ", async () => {
     console.log("Hello world!" + new Date());
 
     //send emails to all the people who got requests the previous day
