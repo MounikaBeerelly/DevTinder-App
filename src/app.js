@@ -1,4 +1,5 @@
 const express = require("express");
+const http = require('http');
 const connectDB = require("./config/database.js");
 const app = express();
 const authRouter = require("./routes/auth.js");
@@ -8,6 +9,7 @@ const cookieParser = require("cookie-parser");
 const userRouter = require("./routes/user.js");
 const cors = require("cors");
 const paymentRouter = require("./routes/payment.js");
+const initializeSocket = require("./utils/socket.js");
 
 require("dotenv").config();
 
@@ -26,6 +28,9 @@ app.use("/", profileRouter);
 app.use("/", requestRouter);
 app.use("/", userRouter);
 app.use("/", paymentRouter);
+
+const server = http.createServer(app);
+initializeSocket(server);
 
 connectDB()
   .then(() => {
